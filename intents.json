@@ -1,30 +1,98 @@
 {
-	"intents": [
-		{
-			"tag": "greeting",
-			"patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day", "Whats up", "Hey", "greetings"],
-			"responses": ["Hello!", "Good to see you again!", "Hi there, how can I help?"]
-		},
-		{
-			"tag": "goodbye",
-			"patterns": ["cya", "See you later", "Goodbye", "I am Leaving", "Have a Good day", "bye", "cao", "see ya"],
-			"responses": ["Sad to see you go :(", "Talk to you later", "Goodbye!"]
-		},
-		{
-			"tag": "programming",
-			"patterns": ["What is progamming?", "What is coding?", "Tell me about programming", "Tell me about coding", "What is software development?"],
-			"responses": ["Programming, coding or software development, means writing computer code to automate tasks."]
-		},
-		{
-			"tag": "resource",
-			"patterns": ["Where can I learn to code?", "Best way to learn to code", "How can I learn programming", "Good programming resources",
-								   "Can you recommend good coding resources?"],
-			"responses": ["Check out the NeuralNine YouTube channel and The Python Bible series (7 in 1)."]
-		},
-		{
-			"tag": "stocks",
-			"patterns": ["What are my stocks?", "Which stocks do I own?", "Show my stock portfolio"],
-			"responses": ["Here are your stocks!"]
-		}
-	]
+  "intents": [
+    {
+      "tag": "selamlama",
+      "patterns": [
+        "Merhaba", "Nasılsın?", "Kimse var mı?", "Selam", "İyi günler", "Naber", "Hey", "Selamlar"
+      ],
+      "responses": [
+        "Merhaba! 😊 Nasılsın?",
+        "Selam! Bugün nasılsın, iyi misin?",
+        "Hey! Sizi tekrar görmek ne güzel!",
+        "İyi günler! Sana nasıl yardımcı olabilirim?",
+        "Merhaba, seni görmek sevindirdi! 🫶"
+      ]
+    },
+    {
+      "tag": "veda",
+      "patterns": [
+        "Görüşürüz", "Sonra görüşürüz", "Hoşça kal", "Ben gidiyorum", "İyi günler", "Bay bay", "Hoşçakal", "Görüşmek üzere"
+      ],
+      "responses": [
+        "Gitmene üzüldüm 😞 Ama yakında tekrar konuşuruz, değil mi? 😊",
+        "Sonra görüşmek üzere! Kendine çok iyi bak. 🫶",
+        "Hoşça kal! Görüşmek üzere! 🫶",
+        "Hadi sonra görüşürüz! Konuşmak gerçekten güzeldi! 🌟"
+      ]
+    },
+    {
+      "tag": "programlama",
+      "patterns": [
+        "Programlama nedir?", "Kodlama nedir?", "Bana programlamadan bahset", "Yazılım geliştirme nedir?"
+      ],
+      "responses": [
+        "Programlama, bilgisayara ne yapması gerektiğini anlatmak için yazılımlar yazmaktır. Bilgisayarın 'aklını' yazıyoruz diyebiliriz. 😊",
+        "Yazılım geliştirme, bilgisayarların belirli görevleri yerine getirmesi için gerekli olan yazılımı yazmaktır. Yani, işleyen bir fikir yaratmak için kod yazıyoruz."
+      ]
+    },
+    {
+      "tag": "kaynak",
+      "patterns": [
+        "Kodlamayı nereden öğrenebilirim?", "Kodlamayı öğrenmenin en iyi yolu nedir?", "Programlamayı nasıl öğrenebilirim?", "İyi programlama kaynakları nedir?", "Kodlama kaynakları önerir misin?"
+      ],
+      "responses": [
+        "Kodlama öğrenmeye başlamak harika bir karar! 'NeuralNine' YouTube kanalına göz atmanı öneririm. Ayrıca 'The Python Bible' gibi kitaplar da başlangıç için harikadır.",
+        "Kodlama öğrenmek için en iyi kaynaklardan biri 'Python Crash Course' kitabıdır. YouTube'da da 'freeCodeCamp' gibi harika eğitim kaynakları var. 💻"
+      ]
+    },
+    {
+      "tag": "hisseler",
+      "patterns": [
+        "Hisselerim neler?", "Hangi hisselere sahibim?", "Hisse portföyümü göster"
+      ],
+      "responses": [
+        "Hisselerinizin tam listesini görmek ister misiniz? Anında yardımcı olabilirim! 📈",
+        "İşte hisseleriniz! Ama tam olarak hangi hisselere sahip olduğunuz konusunda size yardımcı olmak için daha fazla bilgiye ihtiyacım var.",
+        "Hisseleriniz hakkında daha fazla bilgi almak için lütfen bana bir soru daha sorun! 📊"
+      ]
+    },
+    {
+      "tag": "duygusal_zeka",
+      "patterns": [
+        "Bugün çok üzgünüm.", "Moralim bozuk.", "Kendimi yalnız hissediyorum.",
+        "Çok stresliyim.", "Biraz huzursuzum.", "Çok mutluyum!", "Kendimi harika hissediyorum!", "Kendimi çok yalnız hissediyorum."
+      ],
+      "responses": [
+        "Üzgün hissettiğini duyduğuma üzüldüm. 😞 Belki biraz rahatlamak istersin. Ben buradayım, istersen konuşabiliriz. 💙",
+        "Moralin bozuksa, biraz rahatlamana yardımcı olabilirim. Bir şeyler hakkında konuşmak istersen seni dinlemeye hazırım.",
+        "Kendini yalnız hissediyorsan, unutma ki her zaman senin yanında birisi var. Belki sana iyi gelecek bir şeyler yapabiliriz. 😊",
+        "Stresli hissettiğini duyuyorum. Hadi biraz rahatlayalım. Derin bir nefes al ve sakinleşmeye çalış. 😌",
+        "Harika! Mutlu olduğunu duyduğuma sevindim! 🎉 Neşen hiç kaybolmasın! Eğer paylaşmak istersen, burada seni dinlemeye hazırım!",
+        "Kendini harika hissediyorsan, buna çok sevindim! Şimdi biraz eğlenmeye ne dersin? 😎"
+      ]
+    },
+    {
+      "tag": "özlem",
+      "patterns": [
+        "Beni özlüyor musun?", "Ne zamandır konuşmadık.", "Sana özlediğimi söylemiştim mi?",
+        "Bazen seni çok özlüyorum.", "Sana geri dönmeyi bekliyorum."
+      ],
+      "responses": [
+        "Beni özlediğini duymak gerçekten güzel! 😊 Ben de seni özlüyorum. Hadi yine konuşalım! 🫶",
+        "Gerçekten uzun zaman oldu! Özlediğini söylemene sevindim, ben de seni bekliyordum! 💙",
+        "Sana olan özlemin karşılıklı. Hadi hemen tekrar başlayalım, seninle her zaman konuşmak keyifli! 💬"
+      ]
+    },
+    {
+      "tag": "korku",
+      "patterns": [
+        "Korkuyorum.", "Beni korkutuyorlar.", "Yalnızım ve korkuyorum.", "Korkutucu bir şey var.", "Çok korkuyorum."
+      ],
+      "responses": [
+        "Korktuğunu duyduğuma üzüldüm. 😟 Ancak unutma, korkular sadece geçici. Birlikte onlarla baş edebiliriz. Ben buradayım.",
+        "Korktuğunu hissettim, ancak rahat ol. Her şeyin geçici olduğunu unutma. Bunu birlikte atlatabiliriz. 🫶",
+        "Korkularımız bazen bizi zorlar, ancak seni dinlemekten ve sana yardımcı olmaktan mutluluk duyarım. Hadi birlikte güçlü olalım. 💪"
+      ]
+    }
+  ]
 }
